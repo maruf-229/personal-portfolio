@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-
+import About from "../components/About";
+import {Link, Route, Switch} from "react-router-dom";
 
 
 class Home extends Component {
@@ -16,16 +17,17 @@ class Home extends Component {
                                     <div className="row">
                                         <div className="col-xl-6 col-lg-6 col-md-8">
                                             <div className="hero__caption">
-                                                <span data-animation="fadeInUp" data-delay=".4s" style={{color:"white"}}>Get Every Single Solutions.</span>
-                                                <h1 data-animation="fadeInUp" data-delay=".6s">I’m Designer & Developer<br/> Md. Maruf Hossain</h1>
+                                                <span data-animation="fadeInUp" data-delay=".4s" style={{color:"black"}}><b>Get Every Single Solutions.</b></span>
+                                                <h1 data-animation="fadeInUp" data-delay=".6s" style={{color:"rebeccapurple"}}>I’m A Designer & Developer<br/> Md. Maruf Hossain</h1>
                                                 <p data-animation="fadeInUp" data-delay=".8s" style={{color:"white"}}>jhorem rfpsum golor sidt
                                                     amet, consectetur adipiscing elit, eiusmod tempor incididunt utcjhg
                                                     labore bet dolore magna aliqua. Quis ipsum suspendisse ultrices
                                                     gravida.</p>
 
                                                 <div className="hero__btn">
-                                                    <a href="industries.html" className="btn hero-btn"
-                                                       data-animation="fadeInLeft" data-delay=".8s">Learn More</a>
+
+                                                    <Link to="/about" className="btn hero-btn"
+                                                          data-animation="fadeInLeft" data-delay=".8s" >Learn More</Link>
                                                     <a href="industries.html" className="btn border-btn ml-15"
                                                        data-animation="fadeInRight" data-delay="1.0s" style={{color:"white"}}>Hire Me</a>
                                                 </div>
@@ -522,6 +524,9 @@ class Home extends Component {
                         </div>
                     </section>
                 </main>
+                <Switch>
+                    <Route exact path="/about"  component={About} />
+                </Switch>
             </div>
         );
     }

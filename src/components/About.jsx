@@ -34,7 +34,7 @@ class About extends Component {
                             <div className="row justify-content-between align-items-center">
                                 <div className="col-lg-6 col-md-6">
                                     <div className="about-me-img mb-30">
-                                        <img src="assets/img/gallery/aboutme.png" alt=""/>
+                                        <img src="assets/img/gallery/img.jpg" alt="" />
                                     </div>
                                 </div>
                                 <div className="col-lg-5 col-md-6">
